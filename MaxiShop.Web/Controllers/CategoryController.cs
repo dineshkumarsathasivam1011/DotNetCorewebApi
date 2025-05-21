@@ -10,6 +10,10 @@ namespace MaxiShop.Web.Controllers
     public class CategoryController : ControllerBase
     {
         private readonly MaxiShopDbContext _context;
+
+        /// <summary>
+        /// Api Controller for Category
+        /// Dependency Injection of DbContext
         public CategoryController(MaxiShopDbContext context)
         {
             _context = context;
